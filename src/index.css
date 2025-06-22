@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.perspective {
+  perspective: 1500px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Hide scrollbar but allow scroll */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+body::-webkit-scrollbar { /* Chrome, Safari, Opera */
+  display: none;
+}
+
+
