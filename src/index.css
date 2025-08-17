@@ -16,6 +16,7 @@
 body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar { /* Chrome, Safari, Opera */
@@ -23,3 +24,18 @@ body::-webkit-scrollbar { /* Chrome, Safari, Opera */
 }
 
 
+@keyframes border-glow {
+  0% {
+    border-image-source: linear-gradient(to right, #a855f7, #ec4899, #fde68a);
+  }
+  50% {
+    border-image-source: linear-gradient(to right, #3b82f6, #10b981, #facc15);
+  }
+  100% {
+    border-image-source: linear-gradient(to right, #a855f7, #ec4899, #fde68a);
+  }
+}
+
+.animated-border {
+  animation: border-glow 5s linear infinite;
+}
