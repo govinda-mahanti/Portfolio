@@ -324,7 +324,7 @@ const Home = () => {
       {/* hero section */}
       <div
         id="home"
-        className="min-h-screen text-white flex items-center justify-center"
+        className="min-h-screen text-white flex items-center justify-center pt-[90px] md:pt-0"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl px-4">
           {/* Left Content */}
@@ -419,7 +419,7 @@ const Home = () => {
           </motion.div>
 
           {/* Right Image */}
-          <div className="flex justify-center items-center mt-10 md:mt-0">
+          <div className="flex justify-end items-center mt-10 md:mt-0">
             <motion.div
               className="relative rounded-full p-[6px] bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 shadow-lg shadow-pink-400"
               // ROTATION PROPS REMOVED FROM HERE
@@ -433,7 +433,7 @@ const Home = () => {
                 <img
                   src={govinda}
                   alt="developer"
-                  className="w-[300px] h-[300px] object-cover rounded-full drop-shadow-lg"
+                  className="w-[350px] h-[350px] object-cover rounded-full drop-shadow-lg"
                 />
               </div>
             </motion.div>
