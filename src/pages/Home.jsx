@@ -10,133 +10,97 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import govinda from "../assets/govinda.jpg";
 import resumeFile from "../assets/govinda.pdf"; // adjust path if needed
-gsap.registerPlugin(ScrollTrigger);
 
-// const projects = [
-//   // Your projects array remains unchanged
-//   {
-//     id: 4,
-//     title: "Portfolio Website",
-//     description:
-//       "Personal developer portfolio with GSAP animations and smooth scroll effects.",
-//     details:
-//       "Technologies: React, Tailwind CSS, GSAP, Framer Motion, Node.js, Express.",
-//     image: "",
-//     liveLink: "#",
-//   },
-//   {
-//     id: 5,
-//     title: "Real-time Locator App",
-//     description:
-//       "Map-based tracker app that updates user location in real-time.",
-//     details:
-//       "Technologies: Node.js, Express.js, Google Maps API, EJS, HTML, CSS, JavaScript.",
-//     image: "",
-//     liveLink: "#",
-//   },
-//   {
-//     id: 6,
-//     title: "Astha - Doctor Consultation App",
-//     description:
-//       "Online consultation platform with real-time video calls and prescription generation.",
-//     details:
-//       "Technologies: React.js, Tailwind CSS, Redux, Firebase, ZegoCloud, Node.js.",
-//     image: "",
-//     liveLink: "#",
-//   },
-//   {
-//     id: 7,
-//     title: "Invoice Pacer",
-//     description:
-//       "Invoice management tool with authentication and responsive UI.",
-//     details: "Technologies: React.js, Tailwind CSS, Redux.",
-//     image: "",
-//     liveLink: "#",
-//   },
-//   {
-//     id: 8,
-//     title: "Mumvets Website",
-//     description:
-//       "Veterinary service platform with interactive UI and live updates.",
-//     details:
-//       "Technologies: React.js, Tailwind CSS, Framer Motion, Redux, Firebase.",
-//     image: "",
-//     liveLink: "#",
-//   },
-//   {
-//     id: 9,
-//     title: "Virtualsphere Company Website",
-//     description:
-//       "Corporate website with animated sections and email functionality.",
-//     details:
-//       "Technologies: React.js, Tailwind CSS, Framer Motion, Node.js, Express.js.",
-//     image: "",
-//     liveLink: "#",
-//   },
-//   {
-//     id: 10,
-//     title: "Cipla FLCTech Translation Tool",
-//     description:
-//       "Internal tool for multilingual video/audio transcription and translation.",
-//     details:
-//       "Technologies: React.js, Node.js, Express.js, SQL, Google Transcoder API.",
-//     image: "",
-//     liveLink: "#",
-//   },
-// ];
+// projects
+
+import astha from "../assets/projects/astha.png";
+import cipla from "../assets/projects/cipla.png";
+import inps from "../assets/projects/inps.png";
+import locater from "../assets/projects/locater.png";
+import mumvets from "../assets/projects/mumvets.png";
+import port from "../assets/projects/port.png";
+import vst from "../assets/projects/vs.png";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    id: 4,
+    id: 1,
     title: "Portfolio Website",
     description: "A personal portfolio with GSAP animations.",
-    techStack: "React, Tailwind CSS, GSAP, Framer Motion, Node.js, Express",
+    techStack: "React, Tailwind CSS, GSAP, Framer Motion, Emailjs",
     details:
       "This portfolio is a testament to modern frontend development. It leverages GSAP for intricate, high-performance animations and Framer Motion for smooth page transitions. The goal was to create a visually engaging and seamless user experience that effectively showcases my skills and projects.",
-    image: "",
-    liveLink: "#",
+    image: port,
+    liveLink: "https://govindamahanti.vercel.app/",
   },
   {
-    id: 5,
+    id: 2,
     title: "Real-time Locator App",
     description: "A map-based app for tracking user locations.",
     techStack: "Node.js, Express.js, Google Maps API, EJS, WebSocket",
     details:
       "This application provides real-time location tracking using WebSockets for instant client-server communication. The frontend utilizes the Google Maps API to display dynamic markers, and EJS was chosen as the templating engine for its simplicity in rendering dynamic server-side data.",
-    image: "",
+    image: locater,
+    liveLink: "https://tracker-6887.onrender.com/",
+  },
+  {
+    id: 3,
+    title: "Astha - Doctor Consultation App",
+    description: "An online platform for video calls with doctors.",
+    techStack:
+      "React.js, Redux, Tailwind CSS, Firebase, ZegoCloud API, Node.js, Express, MySQL",
+    details:
+      "Astha is a comprehensive tele-health solution. It uses React and Redux for robust state management. Real-time video consultations are powered by the ZegoCloud API for high-quality, low-latency streams. Firebase is integrated for secure user authentication and data storage.",
+    image: astha,
     liveLink: "#",
+  },
+  {
+    id: 4,
+    title: "Invoice Pacer",
+    description: "An invoice management tool with authentication.",
+    techStack:
+      "React.js, Redux Toolkit, Tailwind CSS, Node.js, Express, MongoDB",
+    details:
+      "This tool simplifies invoice management for freelancers. Developed with React, it features a clean UI designed with Tailwind CSS. Global state, including user authentication and invoice data, is managed efficiently with Redux Toolkit, ensuring a seamless user experience across all devices.",
+    image: inps,
+    liveLink: "http://198.38.88.235:8080/",
+  },
+  {
+    id: 5,
+    title: "Mumvets Website",
+    description: "A veterinary service platform with an interactive UI.",
+    techStack:
+      "React.js, Redux, Framer Motion, Firebase, Tailwind CSS, Node.js, Express, MySQL",
+    details:
+      "The Mumvets website serves as an online hub for veterinary services, featuring engaging animations powered by Framer Motion. We used Redux for managing application state, such as appointments. Firebase handles the backend services, including the database and user authentication.",
+    image: mumvets,
+    liveLink: "https://mumvets.com/",
   },
   {
     id: 6,
-    title: "Astha - Doctor Consultation App",
-    description: "An online platform for video calls with doctors.",
-    techStack: "React.js, Redux, Tailwind CSS, Firebase, ZegoCloud API",
+    title: "FlcTech - Cipla Video Processing",
+    description:
+      "A web solution for Cipla to merge videos using Google Transcoder API.",
+    techStack: "React, Tailwind CSS, Node.js, Express, MySQL, Google Cloud",
     details:
-      "Astha is a comprehensive tele-health solution. It uses React and Redux for robust state management. Real-time video consultations are powered by the ZegoCloud API for high-quality, low-latency streams. Firebase is integrated for secure user authentication and data storage.",
-    image: "",
-    liveLink: "#",
+      "FlcTech was developed as a specialized platform for Cipla. The project integrates Google Cloud’s Transcoder API to seamlessly merge three videos into a single output. The frontend was built with React and Tailwind CSS for an intuitive interface, while Node.js and Express power the backend. MySQL is used for structured data management, and deployment relies on Google Cloud infrastructure for scalability and reliability.",
+    image: cipla,
+    liveLink: "https://cipla-govinda-mahantis-projects.vercel.app/",
   },
   {
     id: 7,
-    title: "Invoice Pacer",
-    description: "An invoice management tool with authentication.",
-    techStack: "React.js, Redux Toolkit, Tailwind CSS",
+    title: "Virtualsphere Company Website",
+    description:
+      "A modern company website with animations and backend integration.",
+    techStack: "React.js, Tailwind CSS, Framer Motion, Node.js, Express.js",
     details:
-      "This tool simplifies invoice management for freelancers. Developed with React, it features a clean UI designed with Tailwind CSS. Global state, including user authentication and invoice data, is managed efficiently with Redux Toolkit, ensuring a seamless user experience across all devices.",
-    image: "",
-    liveLink: "#",
-  },
-  {
-    id: 8,
-    title: "Mumvets Website",
-    description: "A veterinary service platform with an interactive UI.",
-    techStack: "React.js, Redux, Framer Motion, Firebase, Tailwind CSS",
-    details:
-      "The Mumvets website serves as an online hub for veterinary services, featuring engaging animations powered by Framer Motion. We used Redux for managing application state, such as appointments. Firebase handles the backend services, including the database and user authentication.",
-    image: "",
-    liveLink: "#",
+      "The Virtualsphere Company Website was designed to establish a strong digital presence. It features smooth UI animations powered by Framer Motion, a responsive layout built with Tailwind CSS, and dynamic content management through a Node.js and Express.js backend. The project emphasizes both visual appeal and performance, ensuring a professional user experience.",
+    image: vst,
+    liveLink: "https://virtualspheretechnologies.in/",
   },
 ];
+
 const paragraph = `I'm currently pursuing my B.Tech in Computer Science Engineering at
   NIST University. I specialize in building scalable full-stack web
   applications using React, Node.js, Express.js, and MongoDB/SQL. With
@@ -497,32 +461,31 @@ const Home = () => {
               </span>
             ))}
           </p>
-         <div className="pt-8 flex justify-center">
-  <a
-    href={resumeFile}
-    download="Govinda_Mahanti_Resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-md text-white font-semibold"
-  >
-    Download
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-5 w-5"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"
-      />
-    </svg>
-  </a>
-</div>
-
+          <div className="pt-8 flex justify-center">
+            <a
+              href={resumeFile}
+              download="Govinda_Mahanti_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-md text-white font-semibold"
+            >
+              Download
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -596,7 +559,7 @@ const Home = () => {
                     <div className="absolute w-full h-full backface-hidden bg-[#161616] p-6 rounded-2xl border border-gray-700 shadow-lg flex flex-col justify-between">
                       <div>
                         <div className="rounded-lg bg-gray-800 h-48 mb-4 flex items-center justify-center text-gray-600">
-                          No Image
+                          <img src={p.image} alt={p.title} />
                         </div>
                         <h3 className="text-2xl font-bold mb-2 text-white">
                           {p.title}
@@ -808,7 +771,10 @@ const Home = () => {
               <a href="https://github.com/govinda-mahanti" target="_blank">
                 <FaGithub className="hover:text-purple-400 transition" />
               </a>
-              <a href="https://www.linkedin.com/in/govinda-mahanti-314754251" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/govinda-mahanti-314754251"
+                target="_blank"
+              >
                 <FaLinkedin className="hover:text-purple-400 transition" />
               </a>
               <a href="https://x.com/govinda_mahanti" target="_blank">
