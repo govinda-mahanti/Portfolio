@@ -53,7 +53,7 @@ const projects = [
     details:
       "Astha is a comprehensive tele-health solution. It uses React and Redux for robust state management. Real-time video consultations are powered by the ZegoCloud API for high-quality, low-latency streams. Firebase is integrated for secure user authentication and data storage.",
     image: astha,
-    liveLink: "#",
+    liveLink: "https://chaoticchacha.in/login",
   },
   {
     id: 4,
