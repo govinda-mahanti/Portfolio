@@ -20,12 +20,15 @@ import locater from "../assets/projects/locater.png";
 import mumvets from "../assets/projects/mumvets.png";
 import port from "../assets/projects/port.png";
 import vst from "../assets/projects/vs.png";
+import nidhibook from "../assets/projects/nidhibook.png";
+import sattava from "../assets/projects/sattava.png";
+import skillbridge from "../assets/projects/skillbridge.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    id: 1,
+    id: 0,
     title: "Portfolio Website",
     description: "A personal portfolio with GSAP animations.",
     techStack: "React, Tailwind CSS, GSAP, Framer Motion, Emailjs",
@@ -35,7 +38,44 @@ const projects = [
     liveLink: "https://govindamahanti.vercel.app/",
   },
   {
-    id: 2,
+    id: 1,
+    title: "NidhiBook",
+    description:
+      "An advanced expense management system with an interactive dashboard and a personalized AI finance assistant.",
+    techStack:
+      "React.js, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB, Chart.js, Groq AI API, Gemini AI API, EmailJS",
+    details:
+      "NidhiBook is a modern and efficient expense management system that helps users track their daily income, expenses, and overall budget. It includes a fully interactive dashboard built with React, Tailwind CSS, Motion, and Chart.js for clean animations and data visualization. The platform features a personalized AI bot powered by the Groq AI API—ExpenseGuru—to guide users with insights and suggestions for managing their finances. Additionally, the Gemini AI API provides smart recommendations based on spending and income patterns. Secure backend operations are handled using Node.js, Express.js, and MongoDB. EmailJS is integrated to power the Contact Us form, allowing users to send inquiries directly without needing a backend mail server. NidhiBook delivers a smooth, responsive, and intelligent financial management experience.",
+    image: nidhibook, // replace with your actual image variable
+    liveLink: "https://nidhibook.vercel.app/",
+  },
+ {
+  id: 2,
+  title: "SkillBridge XR",
+  description:
+    "An immersive XR-based virtual laboratory platform that transforms practical education using VR, AR, and AI-driven analytics.",
+  techStack:
+    "React.js, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB, Groq AI API",
+  details:
+    "SkillBridge XR is an immersive learning platform designed to revolutionize practical engineering education through Virtual Reality (VR) and Augmented Reality (AR). It enables students to perform real engineering experiments inside interactive virtual laboratories—eliminating the need for physical lab equipment. Built with React, Tailwind CSS, Motion, and Chart.js, the platform provides a smooth, animated, and data-rich user experience. AI-driven analytics powered by Groq AI and Gemini APIs deliver personalized feedback, adaptive guidance, and real-time support to learners. The backend uses Node.js, Express.js, and MongoDB for secure and scalable operations, while EmailJS powers instant communication through a contact form. SkillBridge XR focuses on accessibility, especially for rural and semi-urban institutions with limited laboratory resources, providing safe, affordable, and realistic engineering skill development. The system replicates real experiment workflows—tools, procedures, and logic—ensuring students gain true hands-on experience in a virtual environment.",
+  image: skillbridge, // replace with your actual image variable
+  liveLink: "https://skillbridge-silk-one.vercel.app/",
+},
+    {
+  id: 3,
+  title: "Sattava",
+  description:
+    "A comprehensive AI–XR mental health ecosystem for educational institutions, offering personalized emotional support, biometric analytics, and immersive therapy experiences.",
+  techStack:
+    "React.js, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB",
+  details:
+    "Sattava is an advanced mental health support platform designed for students in educational institutions. It integrates AI, VR, AR, and biometric sensors to create a personalized, secure, and immersive mental wellness ecosystem. Students receive real-time emotional analysis through vitals such as blood pressure, heart rate, and SpO₂, while AI-driven insights and VR/AR-based therapy sessions provide tailored interventions. The platform supports students, colleges, volunteer counselors, and professional psychiatrists through dashboards, analytics, secure consultations, and intelligent matching systems. Features include VR therapy rooms that adapt to a student's emotional state, AI counseling calls, AR character support, crisis detection, anonymous consultations, and institution-wide mental health analytics. Sattava ensures complete privacy with encrypted communication and HIPAA-compliant data handling, empowering institutions to build a supportive environment where students can manage stress, overcome challenges, and thrive.",
+  image: sattava, // replace with your actual image variable
+  liveLink: "https://sattava-gray.vercel.app/",
+},
+
+  {
+    id: 4,
     title: "Real-time Locator App",
     description: "A map-based app for tracking user locations.",
     techStack: "Node.js, Express.js, Google Maps API, EJS, WebSocket",
@@ -45,7 +85,7 @@ const projects = [
     liveLink: "https://tracker-6887.onrender.com/",
   },
   {
-    id: 3,
+    id: 5,
     title: "Astha - Doctor Consultation App",
     description: "An online platform for video calls with doctors.",
     techStack:
@@ -56,7 +96,7 @@ const projects = [
     liveLink: "https://chaoticchacha.in/login",
   },
   {
-    id: 4,
+    id: 6,
     title: "Invoice Pacer",
     description: "An invoice management tool with authentication.",
     techStack:
@@ -67,7 +107,7 @@ const projects = [
     liveLink: "http://198.38.88.235:8080/",
   },
   {
-    id: 5,
+    id: 7,
     title: "Mumvets Website",
     description: "A veterinary service platform with an interactive UI.",
     techStack:
@@ -78,7 +118,7 @@ const projects = [
     liveLink: "https://mumvets.com/",
   },
   {
-    id: 6,
+    id: 8,
     title: "FlcTech - Cipla Video Processing",
     description:
       "A web solution for Cipla to merge videos using Google Transcoder API.",
@@ -89,7 +129,7 @@ const projects = [
     liveLink: "https://cipla-govinda-mahantis-projects.vercel.app/",
   },
   {
-    id: 7,
+    id: 9,
     title: "Virtualsphere Company Website",
     description:
       "A modern company website with animations and backend integration.",
@@ -104,7 +144,7 @@ const projects = [
 const paragraph = `I'm currently pursuing my B.Tech in Computer Science Engineering at
   NIST University. I specialize in building scalable full-stack web
   applications using React, Node.js, Express.js, and MongoDB/SQL. With
-  over 7 months of experience at Virtualsphere Technologies Pvt. Ltd.,
+  over 1 year of experience at Virtualsphere Technologies Pvt. Ltd.,
   I’ve developed responsive UIs with Tailwind CSS, integrated RESTful
   APIs, implemented real-time features using Firebase and ZegoCloud,
   and built secure backend systems with role-based authentication. I
@@ -144,7 +184,9 @@ const techStack = [
     name: "MongoDB",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
-  { name: "JWT", icon: "https://jwt.io/img/pic_logo.svg" },
+  { name: "JWT", 
+    icon: "https://jwt.io/img/pic_logo.svg" 
+  },
   {
     name: "Sql",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
@@ -182,8 +224,6 @@ const Home = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submit
-  // Handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
