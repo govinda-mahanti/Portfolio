@@ -198,7 +198,7 @@ const techStack = [
   },
   {
     name: "Tailwind CSS",
-    icon: "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/31/tailwind.png",
+    icon: "https://davidjd.com/wp-content/uploads/2021/03/twcss.png",
   },
   {
     name: "Node JS",
@@ -220,12 +220,35 @@ const techStack = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
   {
-    name: "Github",
-    icon: "https://www.freeiconspng.com/uploads/github-icon-9.png",
+    name: "Git",
+    icon: "https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png",
   },
   {
     name: "java",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+    {
+    name: "Next JS",
+    icon: "https://images-cdn.openxcell.com/wp-content/uploads/2024/07/24154156/dango-inner-2.webp",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+  },
+  { name: "Redis", 
+    icon: "https://img.icons8.com/color/512/redis.png" 
+  },
+  {
+    name: "Firebase",
+    icon: "https://images.seeklogo.com/logo-png/61/3/firebase-icon-logo-png_seeklogo-615938.png",
+  },
+  {
+    name: "Github",
+    icon: "https://www.freeiconspng.com/uploads/github-icon-9.png",
+  },
+  {
+    name: "AI",
+    icon: "https://play-lh.googleusercontent.com/kgjmrpCCQnWOO8H46H2PGgAfcZOO2as0LxHdOUbDs4aI_EwocECSeU0xSIun8FUi2Q",
   },
 ];
 
