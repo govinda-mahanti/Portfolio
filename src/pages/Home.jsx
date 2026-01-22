@@ -23,6 +23,8 @@ import vst from "../assets/projects/vs.png";
 import nidhibook from "../assets/projects/nidhibook.png";
 import sattava from "../assets/projects/sattava.png";
 import skillbridge from "../assets/projects/skillbridge.png"
+import pastebin from "../assets/projects/pastebin.png";
+import corpspend from "../assets/projects/corpspend.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,8 +63,35 @@ const projects = [
   image: skillbridge, // replace with your actual image variable
   liveLink: "https://skillbridge-silk-one.vercel.app/",
 },
-    {
+  
+{
   id: 3,
+  title: "Pastebin",
+  description:
+    "A lightweight and secure text-sharing platform with time-based and view-based expiration.",
+  techStack:
+    "Next.js, TypeScript, Tailwind CSS, Redis, Vercel",
+  details:
+    "Pastebin is a minimal and efficient text-sharing web application that allows users to create and share text pastes via a short, unique URL. Each paste can optionally expire based on a time-to-live (TTL) or a maximum number of views, ensuring controlled and temporary data sharing. The backend is built with Node.js and Express, using Redis as a high-performance persistence layer. Redis TTL handles automatic expiration, while view limits are enforced by updating remaining views on each access. The application is designed for serverless deployment and automated testing, with safe text rendering to prevent script execution. Pastebin-Lite delivers fast access, reliability under concurrent requests, and a clean user experience for quick and secure text sharing.",
+  image: pastebin, // replace with your actual image variable
+  liveLink: "https://pastebin-next.vercel.app/",
+},
+
+{
+  id: 4,
+  title: "CorpSpend",
+  description:
+    "A multi-tenant corporate expense approval system with role-based workflows and OCR-powered receipt processing.",
+  techStack:
+    "React.js, Tailwind CSS, Redux, Node.js, Express.js, MongoDB, JWT, Groq AI API, Tesseract OCR",
+  details:
+    "CorpSpend is a multi-tenant web application designed to help organizations manage and control employee expenses through a structured, role-based approval workflow. The system supports three core roles—Admin, Manager, and Employee—implemented using secure JWT-based authentication and role-based authorization. Admins can onboard and manage employees and managers, define approval hierarchies, and oversee all expense records. Employees can submit expense claims by uploading receipt images or entering expense details manually, with OCR powered by Tesseract used to extract data from receipts automatically. Managers review and approve submitted expenses, after which final approval is handled by the Admin. Groq AI is integrated to assist with intelligent expense insights and data processing. Built with React, Tailwind CSS, and Redux for a responsive and state-driven frontend, and Node.js, Express, and MongoDB for a scalable backend, CorpSpend delivers a streamlined, secure, and efficient corporate expense management experience.",
+  image: corpspend, // replace with your actual image variable
+  liveLink: "https://corpspend.vercel.app/", // replace if different
+},
+
+  {
+  id: 5,
   title: "Sattava",
   description:
     "A comprehensive AI–XR mental health ecosystem for educational institutions, offering personalized emotional support, biometric analytics, and immersive therapy experiences.",
@@ -73,9 +102,8 @@ const projects = [
   image: sattava, // replace with your actual image variable
   liveLink: "https://sattava-gray.vercel.app/",
 },
-
   {
-    id: 4,
+    id: 6,
     title: "Real-time Locator App",
     description: "A map-based app for tracking user locations.",
     techStack: "Node.js, Express.js, Google Maps API, EJS, WebSocket",
@@ -85,7 +113,7 @@ const projects = [
     liveLink: "https://tracker-6887.onrender.com/",
   },
   {
-    id: 5,
+    id: 7,
     title: "Astha - Doctor Consultation App",
     description: "An online platform for video calls with doctors.",
     techStack:
@@ -96,7 +124,7 @@ const projects = [
     liveLink: "https://chaoticchacha.in/login",
   },
   {
-    id: 6,
+    id: 8,
     title: "Invoice Pacer",
     description: "An invoice management tool with authentication.",
     techStack:
@@ -107,7 +135,7 @@ const projects = [
     liveLink: "http://198.38.88.235:8080/",
   },
   {
-    id: 7,
+    id: 9,
     title: "Mumvets Website",
     description: "A veterinary service platform with an interactive UI.",
     techStack:
@@ -118,7 +146,7 @@ const projects = [
     liveLink: "https://mumvets.com/",
   },
   {
-    id: 8,
+    id: 10,
     title: "FlcTech - Cipla Video Processing",
     description:
       "A web solution for Cipla to merge videos using Google Transcoder API.",
@@ -129,7 +157,7 @@ const projects = [
     liveLink: "https://cipla-govinda-mahantis-projects.vercel.app/",
   },
   {
-    id: 9,
+    id: 11,
     title: "Virtualsphere Company Website",
     description:
       "A modern company website with animations and backend integration.",
