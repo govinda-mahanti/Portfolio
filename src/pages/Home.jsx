@@ -26,7 +26,7 @@ import skillbridge from "../assets/projects/skillbridge.png"
 import pastebin from "../assets/projects/pastebin.png";
 import corpspend from "../assets/projects/corpspend.png";
 import mailer from "../assets/projects/mailer.png";
-import toyecom from "../assets/projects/toyeccom.png";  
+import toyecom from "../assets/projects/toyecom.png";  
 
 gsap.registerPlugin(ScrollTrigger);
 
