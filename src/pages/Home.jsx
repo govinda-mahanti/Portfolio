@@ -25,22 +25,16 @@ import sattava from "../assets/projects/sattava.png";
 import skillbridge from "../assets/projects/skillbridge.png"
 import pastebin from "../assets/projects/pastebin.png";
 import corpspend from "../assets/projects/corpspend.png";
+import mailer from "../assets/projects/mailer.png";
+import toyecom from "../assets/projects/toyeccom.png";  
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
+ 
+ 
   {
-    id: 0,
-    title: "Portfolio Website",
-    description: "A personal portfolio with GSAP animations.",
-    techStack: "React, Tailwind CSS, GSAP, Framer Motion, Emailjs",
-    details:
-      "This portfolio is a testament to modern frontend development. It leverages GSAP for intricate, high-performance animations and Framer Motion for smooth page transitions. The goal was to create a visually engaging and seamless user experience that effectively showcases my skills and projects.",
-    image: port,
-    liveLink: "https://govindamahanti.vercel.app/",
-  },
-  {
-    id: 1,
+    id: -1,
     title: "NidhiBook",
     description:
       "An advanced expense management system with an interactive dashboard and a personalized AI finance assistant.",
@@ -51,6 +45,31 @@ const projects = [
     image: nidhibook, // replace with your actual image variable
     liveLink: "https://nidhibook.vercel.app/",
   },
+
+   {
+  id: 0,
+  title: "Mailer",
+  description:
+    "An AI-powered bulk email automation platform designed to create and send personalized email campaigns efficiently.",
+  techStack:
+    "Next.js, TypeScript, Tailwind CSS, Node.js, MongoDB, Nodemailer, Groq AI API",
+  details:
+    "Mailer is an AI-powered bulk email automation platform that helps users create and manage large-scale email campaigns with ease. The application is built using Next.js, TypeScript, and Tailwind CSS to deliver a fast and responsive user interface. It integrates the Groq AI API to generate personalized email content automatically, making campaign creation faster and smarter. Nodemailer is used for bulk email delivery, supporting recipient lists, personalized messages, and attachment management. The backend is powered by MongoDB and Node.js, ensuring secure and scalable data handling. Encrypted Gmail app password authentication is implemented to keep email credentials safe, while campaign tracking and real-time email activity monitoring provide insights into email performance.",
+  image: mailer, // replace with your actual image variable
+  liveLink: "https://mailer-three-blue.vercel.app/",
+},
+{
+  id: 1,
+  title: "ReturnTreasure",
+  description:
+    "A full-featured e-commerce platform built to provide a smooth shopping experience with secure authentication and efficient product management.",
+  techStack:
+    "React.js, Node.js, Express.js, MongoDB, Tailwind CSS, JWT Authentication, Vercel",
+  details:
+    "ReturnTreasure is a modern e-commerce platform designed to provide a seamless online shopping experience. The application allows users to browse products, view detailed listings, and manage orders through a clean and responsive interface built with React.js and Tailwind CSS. The backend is powered by Node.js and Express.js with MongoDB for efficient product and order data management. Secure JWT-based authentication ensures protected user access and account management. The platform follows a modular backend architecture to maintain scalability and performance. The application is deployed on Vercel, ensuring high availability, reliability, and fast performance for users.",
+  image: toyecom, // replace with your actual image variable
+  liveLink: "https://returntreasure.in/",
+},
  {
   id: 2,
   title: "SkillBridge XR",
@@ -167,17 +186,19 @@ const projects = [
     image: vst,
     liveLink: "https://virtualspheretechnologies.in/",
   },
+   {
+    id: 12,
+    title: "Portfolio Website",
+    description: "A personal portfolio with GSAP animations.",
+    techStack: "React, Tailwind CSS, GSAP, Framer Motion, Emailjs",
+    details:
+      "This portfolio is a testament to modern frontend development. It leverages GSAP for intricate, high-performance animations and Framer Motion for smooth page transitions. The goal was to create a visually engaging and seamless user experience that effectively showcases my skills and projects.",
+    image: port,
+    liveLink: "https://govindamahanti.vercel.app/",
+  },
 ];
 
-const paragraph = `I'm currently pursuing my B.Tech in Computer Science Engineering at
-  NIST University. I specialize in building scalable full-stack web
-  applications using React, Node.js, Express.js, and MongoDB/SQL. With
-  over 1 year of experience at Virtualsphere Technologies Pvt. Ltd.,
-  I’ve developed responsive UIs with Tailwind CSS, integrated RESTful
-  APIs, implemented real-time features using Firebase and ZegoCloud,
-  and built secure backend systems with role-based authentication. I
-  follow Agile methodologies, proficiently use Git/GitHub, and focus
-  on delivering clean UI/UX with optimized frontend performance.`;
+const paragraph = `I’m a Full Stack Developer with 1+ year of experience building responsive, scalable, and high-performance web applications using React.js and Next.js for the frontend and Node.js with Express.js for the backend, along with MongoDB and MySQL for efficient data management. I have hands-on experience designing modern and responsive user interfaces with Tailwind CSS, Framer Motion, and Redux, while focusing on smooth user experience and optimized frontend performance. On the backend, I develop and integrate RESTful APIs, implement secure authentication and role-based access control, and design modular and scalable server architectures. I also work with tools and platforms such as Firebase, Google Cloud, Vercel, Postman, Git, and GitHub to build and deploy production-ready applications, while following clean coding practices and Agile development methodologies to deliver reliable and user-friendly software solutions.`;
 
 const techStack = [
   {
@@ -589,7 +610,7 @@ const Home = () => {
           <div className="bg-[#121212] p-6 rounded-lg border border-gray-700 hover:scale-[1.02] transition">
             <div className="flex justify-between items-center mb-3">
               <h3 className="text-2xl font-semibold ">Software Developer</h3>
-              <p className="text-sm text-gray-400">oct 2024 - now</p>
+              <p className="text-sm text-gray-400">oct 2024 - sept 2025</p>
             </div>
             <p className="text-lg text-white mb-2">
               Virtualsphere Technologies Pvt. Ltd
@@ -600,6 +621,24 @@ const Home = () => {
               designers to enhance user experience. <br />- Integrated RESTful
               APIs and handled database optimization.
             </p>
+          </div>
+        </div>
+        <div className="space-y-10 max-w-4xl">
+          <div className="bg-[#121212] p-6 rounded-lg border border-gray-700 hover:scale-[1.02] transition">
+            <div className="flex justify-between items-center mb-3">
+              <h3 className="text-2xl font-semibold ">Freelance Full Stack Developer</h3>
+              <p className="text-sm text-gray-400">nov 2025 - now</p>
+            </div>
+            <p className="text-lg text-white mb-2">
+              Self Employed
+            </p>
+           <p className="text-gray-300">
+  - Developed and deployed scalable full-stack web applications using React, Node.js, and MongoDB. <br />
+  - Collaborated with UI/UX designers to enhance user experience and build responsive interfaces. <br />
+  - Integrated RESTful APIs and optimized database performance for efficient data handling. <br />
+  - Worked with clients to gather requirements and deliver custom web solutions. <br />
+  - Built and deployed production-ready websites on cloud platforms like Vercel.
+</p>
           </div>
         </div>
       </div>
