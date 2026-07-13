@@ -9,7 +9,8 @@ import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import govinda from "../assets/govinda.jpg";
-import resumeFile from "../assets/govinda.pdf"; // adjust path if needed
+import resumeFile from "../assets/govinda.pdf"; 
+import { SiLeetcode } from "react-icons/si";
 
 // projects
 
@@ -27,6 +28,8 @@ import pastebin from "../assets/projects/pastebin.png";
 import corpspend from "../assets/projects/corpspend.png";
 import mailer from "../assets/projects/mailer.png";
 import toyecom from "../assets/projects/toyecom.png";  
+import ibm from "../assets/projects/ibm.png";
+import war from "../assets/projects/war.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +49,7 @@ const projects = [
     liveLink: "https://nidhibook.vercel.app/",
   },
 
-   {
+{
   id: 0,
   title: "Mailer",
   description:
@@ -60,6 +63,18 @@ const projects = [
 },
 {
   id: 1,
+  title: "OSINT Conflict Monitoring System",
+  description:
+    "An AI-powered OSINT platform that collects, processes, and visualizes conflict events from multiple public intelligence sources.",
+  techStack:
+    "React.js, Node.js, Express.js, MongoDB Atlas, Python, Chart.js, Leaflet, BeautifulSoup, Requests, NewsAPI, ReliefWeb API, Groq AI API, Railway, Vercel",
+  details:
+    "The OSINT Conflict Monitoring System is an end-to-end intelligence platform designed to monitor the Iran–US–Israel conflict using publicly available information. The system automatically collects news and humanitarian reports from multiple trusted sources, processes unstructured articles through a Python-based data pipeline, and leverages the Groq AI API to classify, normalize, and extract structured event data. Each event includes location, actors, event type, severity score, confidence score, timestamps, and source links before being stored in MongoDB Atlas. A full-stack dashboard built with React, Chart.js, and Leaflet provides real-time event feeds, interactive maps, trend analysis, and conflict insights, enabling analysts to quickly understand evolving situations through AI-powered data visualization and structured intelligence.",
+  image: war, // replace with your actual image variable
+  liveLink: "https://osint-iota-five.vercel.app/",
+},
+{
+  id: 2,
   title: "ReturnTreasure",
   description:
     "A full-featured e-commerce platform built to provide a smooth shopping experience with secure authentication and efficient product management.",
@@ -71,7 +86,7 @@ const projects = [
   liveLink: "https://returntreasure.in/",
 },
  {
-  id: 2,
+  id: 3,
   title: "SkillBridge XR",
   description:
     "An immersive XR-based virtual laboratory platform that transforms practical education using VR, AR, and AI-driven analytics.",
@@ -84,7 +99,7 @@ const projects = [
 },
   
 {
-  id: 3,
+  id: 4,
   title: "Pastebin",
   description:
     "A lightweight and secure text-sharing platform with time-based and view-based expiration.",
@@ -97,7 +112,7 @@ const projects = [
 },
 
 {
-  id: 4,
+  id: 5,
   title: "CorpSpend",
   description:
     "A multi-tenant corporate expense approval system with role-based workflows and OCR-powered receipt processing.",
@@ -110,7 +125,7 @@ const projects = [
 },
 
   {
-  id: 5,
+  id: 6,
   title: "Sattava",
   description:
     "A comprehensive AI–XR mental health ecosystem for educational institutions, offering personalized emotional support, biometric analytics, and immersive therapy experiences.",
@@ -122,7 +137,7 @@ const projects = [
   liveLink: "https://sattava-gray.vercel.app/",
 },
   {
-    id: 6,
+    id: 7,
     title: "Real-time Locator App",
     description: "A map-based app for tracking user locations.",
     techStack: "Node.js, Express.js, Google Maps API, EJS, WebSocket",
@@ -132,7 +147,19 @@ const projects = [
     liveLink: "https://tracker-6887.onrender.com/",
   },
   {
-    id: 7,
+  id: 8,
+  title: "NeuroCare",
+  description:
+    "An AI-powered mental wellness platform that combines AR, VR, and biometric intelligence to deliver personalized emotional support and therapy.",
+  techStack:
+    "Next.js, React.js, Tailwind CSS, Node.js, Express.js, MongoDB, AI, Face Detection, Emotion Recognition, Biometric Analysis, WebRTC, OpenAI API",
+  details:
+    "NeuroCare is an immersive mental healthcare platform designed to help individuals manage depression, anxiety, stress, and emotional challenges through advanced AI and immersive technologies. The platform analyzes facial expressions, biometric signals, and emotional patterns using AI to understand a user's mental state in real time. Based on these insights, it provides personalized support through AI-driven emotional companions, persona-based VR environments, guided yoga and mindfulness sessions, and secure access to licensed psychiatrists and certified therapists. Built with a scalable full-stack architecture, NeuroCare leverages AR, VR, AI, and real-time communication technologies to create a safe, engaging, and accessible digital space where users can express themselves, receive personalized care, and improve their overall mental well-being.",
+  image: ibm, // replace with your actual image variable
+  liveLink: "https://neurocare-seven.vercel.app/",
+},
+  {
+    id: 9,
     title: "Astha - Doctor Consultation App",
     description: "An online platform for video calls with doctors.",
     techStack:
@@ -143,7 +170,7 @@ const projects = [
     liveLink: "https://chaoticchacha.in/login",
   },
   {
-    id: 8,
+    id: 10,
     title: "Invoice Pacer",
     description: "An invoice management tool with authentication.",
     techStack:
@@ -154,7 +181,7 @@ const projects = [
     liveLink: "http://198.38.88.235:8080/",
   },
   {
-    id: 9,
+    id:11,
     title: "Mumvets Website",
     description: "A veterinary service platform with an interactive UI.",
     techStack:
@@ -165,7 +192,7 @@ const projects = [
     liveLink: "https://mumvets.com/",
   },
   {
-    id: 10,
+    id: 12,
     title: "FlcTech - Cipla Video Processing",
     description:
       "A web solution for Cipla to merge videos using Google Transcoder API.",
@@ -176,7 +203,7 @@ const projects = [
     liveLink: "https://cipla-govinda-mahantis-projects.vercel.app/",
   },
   {
-    id: 11,
+    id: 13,
     title: "Virtualsphere Company Website",
     description:
       "A modern company website with animations and backend integration.",
@@ -187,7 +214,7 @@ const projects = [
     liveLink: "https://virtualspheretechnologies.in/",
   },
    {
-    id: 12,
+    id: 14,
     title: "Portfolio Website",
     description: "A personal portfolio with GSAP animations.",
     techStack: "React, Tailwind CSS, GSAP, Framer Motion, Emailjs",
@@ -212,6 +239,10 @@ const techStack = [
   {
     name: "JavaScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
     name: "React js",
@@ -270,6 +301,25 @@ const techStack = [
   {
     name: "AI",
     icon: "https://play-lh.googleusercontent.com/kgjmrpCCQnWOO8H46H2PGgAfcZOO2as0LxHdOUbDs4aI_EwocECSeU0xSIun8FUi2Q",
+  },
+     {
+    name: "AWS EC2",
+    icon: "https://static.vecteezy.com/system/resources/thumbnails/060/306/089/small_2x/amazon-aws-logo-on-a-white-square-free-png.png",
+  },
+  {
+    name: "Jenkins",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+  },
+  { name: "Docker", 
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" 
+  },
+  {
+    name: "Nginx",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+  },
+  {
+    name: "Ubuntu",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg",
   },
 ];
 
@@ -519,13 +569,13 @@ const Home = () => {
                 <FaLinkedin size={20} />
               </motion.a>
               <motion.a
-                href="https://x.com/govinda_mahanti"
+                href="https://leetcode.com/u/gmahanti955/"
                 target="_blank"
                 whileHover={{ scale: 1.2, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
                 className="p-3 bg-black bg-opacity-50 rounded-full transition"
               >
-                <FaTwitter size={20} />
+                <SiLeetcode size={20} />
               </motion.a>
             </motion.div>
           </motion.div>
